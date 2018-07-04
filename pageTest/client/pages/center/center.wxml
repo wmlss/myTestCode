@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="section">
+    <form bindsubmit="bindFormSubmit">
+      <textarea placeholder="写点什么？？" name="textarea"/>
+      <button form-type="submit" bindtap="submit"> 提交 </button>
+    </form>
+  </view>
+  <view class="usermotto">
+  </view>
+</view>

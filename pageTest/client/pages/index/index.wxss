@@ -1,0 +1,44 @@
+/**index.wxss**/
+ .border {
+  border: 1rpx red solid;
+} 
+
+.images {
+  margin-top: 5rpx;
+  height: 380rpx;
+  width: 750rpx;
+}
+
+.list-item {
+  width: 750rpx;
+  height: 400rpx;
+  border-top: 10rpx #888888  solid;
+  position: relative;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 轮播图 -->
+  <view class="images border" width="355rpx" height="155rpx">
+
+  </view>
+  <!-- 列表 -->
+  <view class="list-item" wx:for="{{array}}">
+     <icon class="deleteBtn" type="success" size="40" type="clear" data-id="{{item._id}}" bindtap='handleDelete' />
+    {{item.content}}
+  </view>
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

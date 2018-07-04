@@ -1,0 +1,12 @@
+textarea {
+  width: 700rpx;
+  height: 450rpx;
+  border: 6rpx #888888 solid;
+  border-radius: 5rpx;
+  padding: 10rpx;
+}
+
+.section button {
+  margin-top: 20rpx;
+}
+
