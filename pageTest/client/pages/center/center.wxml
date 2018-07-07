@@ -1,11 +1,55 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="section">
-    <form bindsubmit="bindFormSubmit">
-      <textarea placeholder="写点什么？？" name="textarea"/>
-      <button form-type="submit" bindtap="submit"> 提交 </button>
-    </form>
+  <view class="box-msg">
+    <view class="box-msg-top">
+      <image mdoe="center" src="https://modao.cc/uploads3/images/2094/20945309/raw_1527819158.png"></image>
+      <br></br>
+      <p>六七八九十</p>
+    </view>
+    <view class="box-msg-bottom ">
+      <view class="bottom-left">
+        <p>123
+        周活跃</p>
+      </view>
+      <view class="bottom-right">
+           <p>123
+        积分</p>
+      </view>
+    </view>
   </view>
-  <view class="usermotto">
+
+  <view class="box-func">
+    <view class="box-fun-item ">
+      <view class="fun-item-left">
+      我的文章
+      </view>
+      <view class="fun-item-right">
+      5 》
+      </view>
+    </view>
+    <view class="box-fun-item ">
+      <view class="fun-item-left">
+      发布
+      </view>
+      <view class="fun-item-right">
+      》
+      </view>
+    </view>
+    <view class="box-fun-item ">
+      <view class="fun-item-left">
+      使用指南
+      </view>
+      <view class="fun-item-right">
+      》
+      </view>
+    </view>
+    <view class="box-fun-item ">
+      <view class="fun-item-left">
+      我的奖品
+      </view>
+      <view class="fun-item-right">
+      》
+      </view>
+    </view>
   </view>
 </view>

@@ -6,7 +6,92 @@ textarea {
   padding: 10rpx;
 }
 
-.section button {
-  margin-top: 20rpx;
+.border {
+  border: 1rpx #888888 solid;
 }
 
+.box-msg {
+  width: 750rpx;
+  height: 360rpx;
+  background-color: rgb(247, 174, 68);
+}
+
+.box-msg .box-msg-top {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
+.box-msg-top image {
+  border-radius: 100%;
+  width: 110rpx;
+  height: 110rpx;
+  margin-top: 15rpx;
+  border: 6rpx white solid;
+}
+
+.box-msg-top p {
+  display: block;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: white;
+}
+
+.box-msg-bottom {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.box-msg-bottom > view {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  height: 100rpx;
+  margin-top: 40rpx; 
+  text-align: center;
+  white-space: pre-line;
+}
+
+.box-msg-bottom .bottom-left {
+   border-right: 2rpx white solid;  
+}
+
+.box-msg-bottom p {
+  position: relative;
+  bottom: 3rpx;
+  font-size: 25rpx;
+  color: white;
+  font-weight: 600;
+}
+
+.box-func {
+  width: 750rpx;
+}
+
+.box-fun-item {
+  height: 80rpx;
+  width: 700rpx;
+  margin: auto;
+  position: relative;
+}
+
+.box-fun-item > view {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  border-bottom: 1rpx rgb(225, 225, 225) solid;
+}
+
+.box-fun-item .fun-item-left {
+  width: 60%;
+  left: 0;
+}
+
+.box-fun-item .fun-item-right {
+  width: 40%;
+  right: 0;
+  text-align: right;
+}

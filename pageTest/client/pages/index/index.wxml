@@ -1,15 +1,92 @@
 <!--index.wxml-->
-<view class="container">
+<view class="">
   <!-- 轮播图 -->
-  <view class="images border" width="355rpx" height="155rpx">
+  <!-- <view class="images border" width="355rpx" height="155rpx">
 
-  </view>
+  </view> -->
+   <swiper indicator-dots="{{indicatorDots}}" class="swiper-imgs"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image class="swiper-img " src="{{item}}" mode="scaleToFill" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
   <!-- 列表 -->
-  <view class="list-item" wx:for="{{array}}">
+  <!-- <view class="list-item" wx:for="{{array}}">
      <icon class="deleteBtn" type="success" size="40" type="clear" data-id="{{item._id}}" bindtap='handleDelete' />
     {{item.content}}
-  </view>
-  <!-- <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
   </view> -->
+  <view class="page-lists">
+    <view class="page-item-wrap">
+      <view class="page-item">
+        <image class="page-item-img" src="https://modao.cc/uploads3/images/2094/20945309/raw_1527819158.png"></image>
+        <view class="page-item-introduce">
+          <view class="introduce-top">
+            <p>《大天使之剑H5》技能集锦之魔剑士绝技篇，快来入坑吧~战友们！</p>
+          </view>
+          <view class="introduce-bottom">
+            <view class="introduce-bottom-left">
+              <image class="author-img" 
+              src="https://modao.cc/uploads3/images/2093/20933515/raw_1527769874.jpeg"></image><span> author</span>
+            </view>
+            <view class="introduce-bottom-right">阅读：200</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="page-item">
+        <!-- https://modao.cc/uploads3/images/2093/20933515/raw_1527769874.jpeg -->
+        <image class="page-item-img" src="https://modao.cc/uploads3/images/2094/20945309/raw_1527819158.png"></image>
+        <view class="page-item-introduce">
+          <view class="introduce-top">
+            <p>《大天使之剑H5》技能集锦之魔剑士绝技篇，快来入坑吧~战友们！</p>
+          </view>
+          <view class="introduce-bottom">
+            <view class="introduce-bottom-left">
+              <image class="author-img" 
+              src="https://modao.cc/uploads3/images/2093/20933515/raw_1527769874.jpeg"></image><span> author</span>
+            </view>
+            <view class="introduce-bottom-right">阅读：200</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="page-item">
+        <!-- https://modao.cc/uploads3/images/2093/20933515/raw_1527769874.jpeg -->
+        <image class="page-item-img" src="https://modao.cc/uploads3/images/2094/20945309/raw_1527819158.png"></image>
+        <view class="page-item-introduce">
+          <view class="introduce-top">
+            <p>《大天使之剑H5》技能集锦之魔剑士绝技篇，快来入坑吧~战友们！</p>
+          </view>
+          <view class="introduce-bottom">
+            <view class="introduce-bottom-left">
+              <image class="author-img" 
+              src="https://modao.cc/uploads3/images/2093/20933515/raw_1527769874.jpeg"></image><span> author</span>
+            </view>
+            <view class="introduce-bottom-right">阅读：200</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="page-item">
+        <!-- https://modao.cc/uploads3/images/2093/20933515/raw_1527769874.jpeg -->
+        <image class="page-item-img" src="https://modao.cc/uploads3/images/2094/20945309/raw_1527819158.png"></image>
+        <view class="page-item-introduce">
+          <view class="introduce-top">
+            <p>《大天使之剑H5》技能集锦之魔剑士绝技篇，快来入坑吧~战友们！</p>
+          </view>
+          <view class="introduce-bottom">
+            <view class="introduce-bottom-left">
+              <image class="author-img" 
+              src="https://modao.cc/uploads3/images/2093/20933515/raw_1527769874.jpeg"></image><span> author</span>
+            </view>
+            <view class="introduce-bottom-right">阅读：200</view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
 </view>

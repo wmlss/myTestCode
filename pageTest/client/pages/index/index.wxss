@@ -1,4 +1,5 @@
 /**index.wxss**/
+
  .border {
   border: 1rpx red solid;
 } 
@@ -41,4 +42,92 @@
 
 .usermotto {
   margin-top: 200px;
+}
+
+.page-item-wrap {
+  width: 750rpx;
+}
+.page-item {
+  width: 700rpx;
+  height: 195rpx;
+  margin: auto;
+  position: relative;
+  padding: 20rpx 0;
+  border-bottom: 2rpx rgb(225, 225, 225) solid;
+}
+
+.page-item .page-item-img {
+  position: absolute;
+  right: 0rpx;
+  width: 316rpx;
+  height: 198rpx;
+}
+
+.page-item .page-item-introduce {
+  position: absolute;
+  left: 0rpx;
+  width: 360rpx;
+}
+
+.page-item-introduce .introduce-top {
+  font-size: 35rpx;
+  font-weight: 700;
+  height: 150rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.page-item-introduce .introduce-bottom {
+  width: 360rpx;
+  height: 40rpx;
+  position: relative;
+}
+
+.introduce-bottom .introduce-bottom-left {
+  position: absolute;
+  height: 40rpx;
+  width: 200rpx;
+}
+
+.introduce-bottom .introduce-bottom-left .author-img {
+  display: inline-block;
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 100%;
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+
+.introduce-bottom .introduce-bottom-right {
+  position: absolute;
+  right: 0;
+  height: 40rpx;
+  width: 200rpx;
+}
+
+.introduce-bottom-left span {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  vertical-align: 13rpx;
+}
+
+.introduce-bottom-right{
+  text-align: right;
+  font-size: 20rpx;
+  font-weight: 600;
+  line-height: 40rpx;
+}
+
+.swiper-imgs {
+  height: 400rpx;
+  padding-bottom: 6rpx;
+  border-bottom: 1rpx solid rgb(225, 225, 225);
+}
+
+swiper-item image{
+  width: 100%;
+  height: 100%;
 }

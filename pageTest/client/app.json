@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/center/center"
+    "pages/center/center",
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -15,16 +15,18 @@
     "backgroundColor": "#FBFBFB",
     "position": "bottom",
     "borderStyle": "white",
-    "list": [{
+    "list": [
+    {
+      "pagePath": "pages/center/center",
+      "text": "我的",
+      "iconPath": "images/discovery.png",
+      "selectedIconPath": "images/discovery_focus.png"
+    },
+    {
       "pagePath": "pages/index/index",
-      "text": "主页",
+      "text": "首页",
       "iconPath": "images/index.png",
       "selectedIconPath": "images/index_focus.png"
-    }, {
-      "pagePath": "pages/center/center",
-      "text": "中心",
-        "iconPath": "images/discovery.png",
-        "selectedIconPath": "images/discovery_focus.png"
     }
     ]
   }
