@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>hello2 world</h2>
+  </body>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript">
+    var ajax = {
+      get: function(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, false);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && xhr.status == 200 || xhr.status == 304) {
+            console.log(xhr.responseText);
+            callback.call(this, xhr.responseText);
+          }
+        };
+        xhr.send();
+      },
+      post: function(url, data, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && xhr.status == 200 || xhr.status == 304) {
+            callback.call(this, xhr.responseText);
+          }
+        };
+        xhr.send(data);
+      }
+    }
+
+
+    function getXHR() {
+      var xmlreq = false;
+      if (window.XMLHttpRequest) {
+        xmlreq = new XMLHttpRequest();
+      }else if(window.ActiveXobject) {
+        try {
+          xmlreq = new ActiveXObject('Msxm12.XMLHTTP');
+        } catch(e) {
+          try {
+            xmlreq = new ActiveXObject('Microsoft.XMLHTTP');
+          } catch(error) {
+            console.log(error);
+          }
+        }
+      }
+      return xmlreq;
+    }
+
+    // $.ajax({
+    //   url: 'http://localhost:8080/',
+    //   method: 'GET',
+    //   success: function(res) {
+    //     console.log(res);
+    //   }
+    // })
+    ajax.get('http://localhost:8080/', function(res) {
+      console.log(res);
+    })
+    console.log('after ajax');
+  </script>
+</html>
